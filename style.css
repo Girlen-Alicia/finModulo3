@@ -1,0 +1,239 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FABC3F;
+}
+
+.header{
+    font-size: medium;
+    margin-bottom: 20px;
+    color: #FABC3F;
+}
+
+
+.chat-contact{
+    width:30vw;
+    max-width: 400px;
+    min-width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.btn-chats{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border: white solid;
+    color: grey;
+    font-size: x-large;
+    align-items: center;
+}
+
+.chat-contact input{
+    display: flex;
+    width: 100%;
+    height: 45px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chat-contact__menu{
+    list-style: none;
+    padding:10px;
+    margin:0;
+    box-shadow: 0 2px 6px rgba(87, 87, 87, 0.15);
+}
+
+
+.chat-contact__item{
+    display: flex;
+    align-items: center;
+    column-gap:20px;
+    padding:15px;
+    color: #C7253E;
+}
+
+.chat-contact__item:not(:last-child){
+    border-bottom: 1px solid rgb(13, 156, 188);
+}
+
+
+.chat-contact__img{
+    width:80px;
+    height: 80px;
+    min-width: 40px;
+}
+
+.chat-contact__img img{
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+
+}
+
+.chat-contact__content{
+    flex-grow:1;
+}
+
+.chat-contact__content h4{
+    margin:0;
+    font-size:1.125rem;
+}
+
+.chat-contact__content p{
+    color: rgb(111, 111, 114);
+}
+
+.main{
+    display: flex;
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 40px;
+}
+
+.chat-block{
+    flex-grow: 1;
+    background-image: url(img/fondo.jpg);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.chat-block__user{
+    display: flex;
+    background-color: #C7253E;
+    font-size: small;
+    color: wheat;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chat-block__img{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+}
+
+.chat-block__img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+}
+
+.chat-block__name{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.chat-block__name h3, p{
+    margin: 0;
+}
+
+.chat-block__conversation-user1 img{
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    border-radius: 50%;
+}
+
+.chat-block__conversation-user1 p{
+    display: inline;
+    background-color: rgb(180, 230, 81);
+    border-radius: 5px 5px;
+    padding: 5px 5px;
+    font-size: large;
+}
+
+.chat-block__conversation-user2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.chat-block__conversation-user2 img{
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+    border-radius: 50%;
+}
+
+.chat-block__conversation-user2 p{
+    display: inline;
+    background-color: rgb(81, 234, 245);
+    border-radius: 5px 5px;
+    padding: 5px 5px;
+    font-size: large;
+}
+
+.msg1_user1, .msg2_user2, .msg3_user1, .msg4_user2, .msg5_user1, .msg6_user2{
+    font-size: small;
+    color: rgb(78, 78, 78);
+}
+
+.chat-block__send-msg{
+    position: relative;
+    top: 15px;
+}
+
+.chat-block__send-msg input{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border:5px yellowgreen solid;
+}
+
+.chat-block__send-msg button{
+    width: 100%;
+    height: 50px;
+    border:5px yellowgreen solid;
+}
+
+.dropdown{
+    background-color: white;
+}
+
+.chat-btn-contact{
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .chat-contact{
+        display: none;
+        max-width: none;
+        width: 100%;
+        min-height: 600px;
+        height: auto;
+        padding-bottom: 1rem;
+        margin-bottom: 20px;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .chat-btn-contact{
+        display: block;
+        margin-bottom: 1px;
+    }
+    .chat-block{
+        padding-bottom: 1rem;
+    }
+    .chat-block__conversation{
+        padding-left: 8px;
+        font-size: x-small;
+    }
+    .chat-block__send-msg{
+        position: static;
+        margin-top: 2rem;
+
+    }
+    .dropdown{
+        border: 1px;
+    }
+
+}
